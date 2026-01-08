@@ -1,10 +1,6 @@
 "use client";
 import React from "react";
-import {
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { FooterBackgroundGradient } from "@/components/ui/hover-footer";
 import { TextHoverEffect } from "@/components/ui/hover-footer";
 
@@ -53,15 +49,16 @@ function HoverFooter() {
     },
   ];
 
-
   return (
     <footer className="relative h-fit rounded-3xl overflow-hidden m-4 md:m-8 bg-black border border-white/10">
-      <div className="max-w-7xl mx-auto p-6 md:p-14 z-40 relative">
+      <div className="max-w-8xl mx-auto p-6 md:p-14 z-40 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8 lg:gap-16 pb-8 md:pb-12">
           {/* Brand section */}
           <div className="flex flex-col space-y-3 md:space-y-4">
             <div className="flex items-center space-x-2">
-              <span className="text-white text-2xl md:text-3xl font-bold">Empower</span>
+              <span className="text-white text-2xl md:text-3xl font-bold">
+                Empower
+              </span>
             </div>
             <p className="text-xs md:text-sm text-white/70 leading-relaxed">
               A modern web development company specializing in creating
@@ -94,18 +91,22 @@ function HoverFooter() {
           ))}
 
           {/* Contact section */}
-          <div>
+          <div className="min-w-0">
             <h4 className="text-white text-base md:text-lg font-semibold mb-4 md:mb-6">
               Contact Us
             </h4>
             <ul className="space-y-3 md:space-y-4">
               {contactInfo.map((item, i) => (
-                <li key={i} className="flex items-center space-x-3">
-                  {item.icon}
+                <li key={i} className="flex items-start space-x-3 min-w-0">
+                  <span className="flex-shrink-0 mt-0.5">{item.icon}</span>
                   {item.href ? (
                     <a
                       href={item.href}
-                      className="text-sm md:text-base text-white/70 hover:text-white transition-colors break-all"
+                      className="text-sm md:text-base text-white/70 hover:text-white transition-colors min-w-0 flex-1"
+                      style={{
+                        wordBreak: "break-all",
+                        overflowWrap: "anywhere",
+                      }}
                     >
                       {item.text}
                     </a>
