@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function CTA() {
   const [titleNumber, setTitleNumber] = useState(0);
@@ -31,9 +32,11 @@ function CTA() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex gap-8 items-center justify-center flex-col">
           <div>
-            <Button variant="secondary" size="sm" className="gap-4">
-              View Our Work <MoveRight className="w-4 h-4" />
-            </Button>
+            <Link href="/work">
+              <Button variant="secondary" size="sm" className="gap-4">
+                View Our Work <MoveRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </div>
           <div className="flex gap-4 flex-col">
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight max-w-4xl text-center">
@@ -77,12 +80,16 @@ function CTA() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Button size="lg" className="gap-4" variant="outline">
-              Schedule a Call <PhoneCall className="w-4 h-4" />
-            </Button>
-            <Button size="lg" className="gap-4">
-              Start Your Project <MoveRight className="w-4 h-4" />
-            </Button>
+            <a href="#contact">
+              <Button size="lg" className="gap-4" variant="outline">
+                Schedule a Call <PhoneCall className="w-4 h-4" />
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button size="lg" className="gap-4">
+                Start Your Project <MoveRight className="w-4 h-4" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

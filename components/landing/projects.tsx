@@ -9,44 +9,89 @@ export function HeroParallaxDemo() {
     </section>
   );
 }
-
-// TODO: Replace with your actual project portfolio
-// Update these with real projects, screenshots, and links
 export const products = [
   {
-    title: "E-Commerce Platform",
-    link: "#",
-    thumbnail:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    title: "Ava",
+    link: "https://gomoonbeam.com",
+    thumbnail: "/ava.png",
   },
   {
-    title: "SaaS Dashboard",
-    link: "#",
-    thumbnail:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    title: "Empower",
+    link: "https://empower-five.vercel.app/",
+    thumbnail: "/empower.png",
   },
   {
-    title: "Mobile App",
-    link: "#",
-    thumbnail:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
+    title: "legalAI",
+    link: "https://legalai.dev/",
+    thumbnail: "/legal.png",
   },
   {
-    title: "Corporate Website",
-    link: "#",
+    title: "Creme Digital",
+    link: "https://cremedigital.com",
     thumbnail:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+  },
+
+  {
+    title: "Editrix AI",
+    link: "https://editrix.ai",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
   },
   {
-    title: "Web Application",
-    link: "#",
-    thumbnail:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+    title: "Universal AI Services",
+    link: "https://universal-ai-services.vercel.app/",
+    thumbnail: "/uais.png",
+  },
+
+  {
+    title: "Robot Combat Federation",
+    link: "https://algochurn.com",
+    thumbnail: "/rcf.png",
   },
   {
-    title: "Portfolio Site",
-    link: "#",
+    title: "Phono",
+    link: "https://phono-web.vercel.app/",
+    thumbnail: "/phono.png",
+  },
+  {
+    title: "Lunina",
+    link: "https://lumina-fawn.vercel.app/",
+    thumbnail: "/lumina.png",
+  },
+  {
+    title: "SmartBridge",
+    link: "https://smartbridgetech.com",
     thumbnail:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+  },
+  {
+    title: "Renderwork Studio",
+    link: "https://renderwork.studio",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+  },
+
+  {
+    title: "TopShotGolfing",
+    link: "https://topshotgolfing.com",
+    thumbnail: "/topshot.png",
+  },
+  {
+    title: "SF Playground",
+    link: "https://sfplayground.vercel.app/",
+    thumbnail: "/sfp.png",
+  },
+  {
+    title: "Invoker Labs",
+    link: "https://invoker.lol",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+  },
+  {
+    title: "E Free Invoice",
+    link: "https://efreeinvoice.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
 ];

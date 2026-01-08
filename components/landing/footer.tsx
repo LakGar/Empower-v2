@@ -29,8 +29,8 @@ function HoverFooter() {
       title: "Company",
       links: [
         { label: "About Us", href: "#about" },
-        { label: "Our Team", href: "#" },
-        { label: "Portfolio", href: "#projects" },
+        { label: "Our Team", href: "#about" },
+        { label: "Portfolio", href: "/work" },
         {
           label: "Contact",
           href: "#contact",
@@ -58,13 +58,13 @@ function HoverFooter() {
     },
   ];
 
-  // Social media icons
+  // Social media icons - Update these with your actual social media links
   const socialLinks = [
-    { icon: <Linkedin size={20} />, label: "LinkedIn", href: "#" },
-    { icon: <Github size={20} />, label: "GitHub", href: "#" },
-    { icon: <Twitter size={20} />, label: "Twitter", href: "#" },
-    { icon: <Instagram size={20} />, label: "Instagram", href: "#" },
-    { icon: <Globe size={20} />, label: "Website", href: "#" },
+    { icon: <Linkedin size={20} />, label: "LinkedIn", href: "https://linkedin.com/company/empower" },
+    { icon: <Github size={20} />, label: "GitHub", href: "https://github.com/LakGar" },
+    { icon: <Twitter size={20} />, label: "Twitter", href: "https://twitter.com/empower" },
+    { icon: <Instagram size={20} />, label: "Instagram", href: "https://instagram.com/empower" },
+    { icon: <Globe size={20} />, label: "Website", href: "https://empowerv2.vercel.app" },
   ];
 
   return (
