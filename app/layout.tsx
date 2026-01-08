@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.theempowerweb.com"),
   title: "Empower - Elevate Your Digital Vision",
   description:
     "A modern web development company specializing in creating powerful, scalable, and innovative digital solutions. We combine technical expertise with creative vision to deliver exceptional results.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Empower" }],
   creator: "Empower",
   icons: {
-    icon: "/logo.png",
+    icon: [{ url: "/logo.png", type: "image/png" }],
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
