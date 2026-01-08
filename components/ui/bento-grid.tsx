@@ -32,14 +32,16 @@ const BentoCard = ({
   description,
   href,
   cta,
+  onClick,
 }: {
   name: string;
   className: string;
   background: ReactNode;
   Icon: any;
   description: string;
-  href: string;
+  href?: string;
   cta: string;
+  onClick?: () => void;
 }) => (
   <motion.div
     key={name}
@@ -69,14 +71,22 @@ const BentoCard = ({
     >
       <Button
         variant="ghost"
-        asChild
+        asChild={!!href && !onClick}
         size="sm"
-        className="pointer-events-auto text-white/70 hover:text-white"
+        className="pointer-events-auto text-white/70 hover:text-black"
+        onClick={onClick}
       >
-        <a href={href}>
-          {cta}
-          <ArrowRightIcon className="ml-2 h-4 w-4" />
-        </a>
+        {href && !onClick ? (
+          <a href={href}>
+            {cta}
+            <ArrowRightIcon className="ml-2 h-4 w-4" />
+          </a>
+        ) : (
+          <span className="flex items-center">
+            {cta}
+            <ArrowRightIcon className="ml-2 h-4 w-4" />
+          </span>
+        )}
       </Button>
     </div>
     <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-white/3" />

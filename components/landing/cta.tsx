@@ -3,10 +3,11 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { ScheduleCallModal } from "@/components/ui/schedule-call-modal";
 
 function CTA() {
   const [titleNumber, setTitleNumber] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const titles = useMemo(
     () => ["amazing", "new", "wonderful", "beautiful", "smart"],
     []
@@ -30,16 +31,9 @@ function CTA() {
     >
       <div className="absolute inset-0 bg-linear-to-br from-indigo-500/3 via-transparent to-rose-500/3 blur-3xl" />
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex gap-8 items-center justify-center flex-col">
-          <div>
-            <Link href="/work">
-              <Button variant="secondary" size="sm" className="gap-4">
-                View Our Work <MoveRight className="w-4 h-4" />
-              </Button>
-            </Link>
-          </div>
-          <div className="flex gap-4 flex-col">
-            <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight max-w-4xl text-center">
+        <div className="flex gap-6 md:gap-8 items-center justify-center flex-col">
+          <div className="flex gap-4 flex-col w-full">
+            <h2 className="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-6 tracking-tight max-w-4xl text-center">
               <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
                 Ready to Build
               </span>
@@ -73,26 +67,32 @@ function CTA() {
               </span>
             </h2>
 
-            <p className="text-base sm:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide text-center">
+            <p className="text-sm md:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide text-center px-2">
               Let's transform your digital vision into reality. We create
               powerful, scalable web solutions that drive results and exceed
               expectations.
             </p>
           </div>
-          <div className="flex flex-row gap-3">
-            <a href="#contact">
-              <Button size="lg" className="gap-4" variant="outline">
-                Schedule a Call <PhoneCall className="w-4 h-4" />
-              </Button>
-            </a>
-            <a href="#contact">
-              <Button size="lg" className="gap-4">
-                Start Your Project <MoveRight className="w-4 h-4" />
-              </Button>
-            </a>
+          <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
+            <Button
+              size="lg"
+              className="gap-4 w-full md:w-auto"
+              variant="outline"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Schedule a Call <PhoneCall className="w-4 h-4" />
+            </Button>
+            <Button
+              size="lg"
+              className="gap-4 w-full md:w-auto"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Start Your Project <MoveRight className="w-4 h-4" />
+            </Button>
           </div>
         </div>
       </div>
+      <ScheduleCallModal open={isModalOpen} onOpenChange={setIsModalOpen} />
     </section>
   );
 }

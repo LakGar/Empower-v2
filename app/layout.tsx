@@ -29,20 +29,34 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Empower" }],
   creator: "Empower",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://empowerv2.vercel.app",
+    url: "https://www.theempowerweb.com/",
     title: "Empower - Elevate Your Digital Vision",
     description:
       "A modern web development company specializing in creating powerful, scalable, and innovative digital solutions.",
     siteName: "Empower",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Empower Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Empower - Elevate Your Digital Vision",
     description:
       "A modern web development company specializing in creating powerful, scalable, and innovative digital solutions.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,

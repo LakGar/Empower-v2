@@ -16,37 +16,36 @@ export const products = [
     thumbnail: "/ava.png",
   },
   {
+    title: "Legal AI",
+    link: "https://legalai.dev/",
+    thumbnail: "/legalai.png",
+  },
+
+  {
+    title: "Universal AI Services",
+    link: "https://universalaiservices.com/",
+    thumbnail: "/uais.png",
+  },
+  {
     title: "Empower",
     link: "https://empower-five.vercel.app/",
     thumbnail: "/empower.png",
   },
-  {
-    title: "legalAI",
-    link: "https://legalai.dev/",
-    thumbnail: "/legal.png",
-  },
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  },
-
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
   },
-  {
-    title: "Universal AI Services",
-    link: "https://universal-ai-services.vercel.app/",
-    thumbnail: "/uais.png",
-  },
 
   {
+    title: "legalAI",
+    link: "https://legalai.dev/",
+    thumbnail: "/legal.png",
+  },
+  {
     title: "Robot Combat Federation",
-    link: "https://algochurn.com",
+    link: "https://robot-combat-federation.vercel.app/",
     thumbnail: "/rcf.png",
   },
   {

@@ -1,9 +1,10 @@
 "use client";
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Code, Palette, Zap, Globe, Smartphone, Database } from "lucide-react";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import { ScheduleCallModal } from "@/components/ui/schedule-call-modal";
 
 const services = [
   {
@@ -83,6 +84,7 @@ const fadeUpVariants = {
 
 export function Services() {
   const ref = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -141,11 +143,16 @@ export function Services() {
         <div className="w-full max-w-7xl mx-auto">
           <BentoGrid className="lg:grid-rows-3">
             {services.map((service) => (
-              <BentoCard key={service.name} {...service} />
+              <BentoCard
+                key={service.name}
+                {...service}
+                onClick={() => setIsModalOpen(true)}
+              />
             ))}
           </BentoGrid>
         </div>
       </motion.div>
+      <ScheduleCallModal open={isModalOpen} onOpenChange={setIsModalOpen} />
     </section>
   );
 }

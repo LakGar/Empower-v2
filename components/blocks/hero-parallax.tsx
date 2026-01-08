@@ -57,9 +57,35 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="relative w-full bg-black h-[300vh] py-40 overflow-hidden antialiased flex flex-col [perspective:1000px] [transform-style:preserve-3d]"
+      className="relative w-full bg-black md:h-[300vh] py-20 md:py-40 overflow-hidden antialiased flex flex-col md:[perspective:1000px] md:[transform-style:preserve-3d]"
     >
       <Header />
+      {/* Mobile Grid View */}
+      <div className="md:hidden px-4 pb-20">
+        <div className="grid grid-cols-2 gap-4">
+          {products.map((product) => (
+            <Link
+              key={product.title}
+              href={product.link}
+              className="group relative aspect-square rounded-lg overflow-hidden border border-white/10 hover:border-white/20 transition-all"
+            >
+              <Image
+                src={product.thumbnail}
+                height="400"
+                width="400"
+                className="object-cover object-center h-full w-full"
+                alt={product.title}
+              />
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
+                <h3 className="text-white text-sm font-semibold p-3">
+                  {product.title}
+                </h3>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+      {/* Desktop Parallax View */}
       <motion.div
         style={{
           rotateX,
@@ -67,7 +93,7 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className="relative"
+        className="hidden md:block relative"
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
