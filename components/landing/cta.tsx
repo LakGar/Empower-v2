@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScheduleCallModal } from "@/components/ui/schedule-call-modal";
+import { ContactModal } from "@/components/ui/contact-modal";
 
 function CTA() {
   const [titleNumber, setTitleNumber] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const titles = useMemo(
     () => ["amazing", "new", "wonderful", "beautiful", "smart"],
     []
@@ -78,21 +80,28 @@ function CTA() {
               size="lg"
               className="gap-4 w-full md:w-auto"
               variant="outline"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => setIsScheduleModalOpen(true)}
             >
               Schedule a Call <PhoneCall className="w-4 h-4" />
             </Button>
             <Button
               size="lg"
               className="gap-4 w-full md:w-auto"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => setIsContactModalOpen(true)}
             >
               Start Your Project <MoveRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
       </div>
-      <ScheduleCallModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+      <ScheduleCallModal
+        open={isScheduleModalOpen}
+        onOpenChange={setIsScheduleModalOpen}
+      />
+      <ContactModal
+        open={isContactModalOpen}
+        onOpenChange={setIsContactModalOpen}
+      />
     </section>
   );
 }
