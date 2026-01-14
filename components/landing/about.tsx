@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Target, Award, Heart, Users } from "lucide-react";
 
 const values = [
@@ -46,6 +46,18 @@ const fadeUpVariants = {
 
 export function About() {
   const ref = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024); // lg breakpoint
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -69,10 +81,10 @@ export function About() {
     >
       <div className="absolute inset-0 bg-linear-to-br from-violet-500/3 via-transparent to-cyan-500/3 blur-3xl" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 sm:px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div
-            style={{ x: leftX }}
+            style={isMobile ? {} : { x: leftX }}
             custom={0}
             variants={fadeUpVariants}
             initial="hidden"
@@ -106,7 +118,10 @@ export function About() {
             </p>
           </motion.div>
 
-          <motion.div style={{ x: rightX }} className="grid grid-cols-2 gap-4">
+          <motion.div
+            style={isMobile ? {} : { x: rightX }}
+            className="grid grid-cols-2 gap-4"
+          >
             {values.map((value, index) => (
               <motion.div
                 key={value.title}

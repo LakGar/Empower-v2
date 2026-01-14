@@ -15,11 +15,6 @@ export const products = [
     link: "https://gomoonbeam.com",
     thumbnail: "/ava.png",
   },
-  {
-    title: "Legal AI",
-    link: "https://legalai.dev/",
-    thumbnail: "/legalai.png",
-  },
 
   {
     title: "Universal AI Services",
