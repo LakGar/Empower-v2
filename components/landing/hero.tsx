@@ -4,12 +4,12 @@ function Hero() {
   return (
     <HeroGeometric
       badge="EmpowerWeb"
-      title1="Websites and Internal Systems"
-      title2="Built to Drive Revenue and Scale Operations"
-      subtitle="For AI, robotics, and modern service businesses that need conversion-focused websites, streamlined workflows, and serious growth infrastructure."
-      primaryCtaLabel="Book Free Strategy Call"
+      title1="Websites and Digital Systems"
+      title2="Built to Help Modern Companies Move Faster"
+      subtitle="We partner with growing teams to ship production-ready products quickly, build operational infrastructure that removes friction, and align technical execution with real business priorities."
+      primaryCtaLabel="Book a Strategy Call"
       primaryCtaHref="#contact"
-      secondaryCtaLabel="View Case Studies"
+      secondaryCtaLabel="Get Your Build Roadmap"
       secondaryCtaHref="#projects"
     />
   );

@@ -11,7 +11,7 @@ const services = [
     Icon: Globe,
     name: "Custom Websites That Convert",
     description:
-      "Messaging, UX, and conversion architecture built to turn qualified traffic into booked calls and signed clients.",
+      "Websites built to create trust quickly, improve conversion, and turn interest into real sales conversations.",
     href: "#contact",
     cta: "Start Building Your Growth Infrastructure",
     background: (
@@ -23,7 +23,7 @@ const services = [
     Icon: Wrench,
     name: "Internal Tools and CRM Systems",
     description:
-      "Operational systems that replace spreadsheet chaos with clear workflows, team visibility, and repeatable execution.",
+      "Operational systems that replace manual handoffs with clear workflows, better visibility, and consistent execution.",
     href: "#contact",
     cta: "Get a Technical Growth Audit",
     background: (
@@ -35,7 +35,7 @@ const services = [
     Icon: Bot,
     name: "AI-Enhanced Product and Workflow Development",
     description:
-      "Practical AI applied to your product and operations to improve conversion, speed decisions, and increase operational efficiency.",
+      "Practical AI integrations that help teams ship faster, reduce operational friction, and scale without process breakdowns.",
     href: "#contact",
     cta: "Book Strategy Session",
     background: (
@@ -111,7 +111,7 @@ export function Services() {
             </span>
           </h2>
           <p className="text-base sm:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-            Three focused offerings designed to improve conversion, scalability, and operational efficiency.
+            Three focused offerings centered on shipping faster, improving conversion, and building infrastructure that scales with your business.
           </p>
         </motion.div>
 

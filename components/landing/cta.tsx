@@ -20,16 +20,16 @@ function CTA() {
           <div className="flex gap-4 flex-col w-full justify-center items-center">
             <h2 className="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-6 tracking-tight max-w-4xl text-center">
               <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
-                Start Building Your
+                Plan Your Next
               </span>
               <br />
               <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300">
-                Growth Infrastructure
+                Digital Move
               </span>
             </h2>
 
             <p className="text-sm md:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide text-center px-2">
-              Book a strategy session to map your conversion funnel, system bottlenecks, and the fastest path to a scalable build.
+              We will map your highest-impact build opportunities and define the system roadmap needed to ship with speed and confidence.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto items-center">
@@ -38,7 +38,7 @@ function CTA() {
               className="gap-2 w-full md:w-auto bg-white text-black hover:bg-white/90"
               onClick={() => setIsScheduleModalOpen(true)}
             >
-              Book Strategy Session <PhoneCall className="w-4 h-4" />
+              Book a Strategy Call <PhoneCall className="w-4 h-4" />
             </Button>
             <Button
               size="lg"
@@ -46,7 +46,7 @@ function CTA() {
               className="gap-2 w-full md:w-auto border-white/20 text-black"
               onClick={() => setIsContactModalOpen(true)}
             >
-              Get a Technical Growth Audit
+              Get Your System Roadmap
             </Button>
           </div>
         </div>

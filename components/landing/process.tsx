@@ -10,35 +10,35 @@ const steps = [
     icon: <Search className="w-5 h-5" />,
     title: "Discovery",
     description:
-      "We map your current funnel, operations, and constraints so we focus on the highest leverage opportunities first.",
+      "We quickly map your goals, constraints, and current systems so effort is focused where execution will move the business fastest.",
   },
   {
     number: "02",
     icon: <PenTool className="w-5 h-5" />,
     title: "Strategy",
     description:
-      "You get a clear execution plan, timeline, and scope aligned to revenue goals and operational efficiency.",
+      "You get a practical roadmap with priorities, delivery phases, and infrastructure decisions tied to business outcomes.",
   },
   {
     number: "03",
     icon: <Code2 className="w-5 h-5" />,
     title: "Build",
     description:
-      "We ship in weekly milestones with transparent updates, keeping quality high and surprises low.",
+      "We ship in fast cycles with founder-level communication, so decisions are quick and momentum stays high.",
   },
   {
     number: "04",
     icon: <Rocket className="w-5 h-5" />,
     title: "Launch",
     description:
-      "Deployment, QA, and handoff are handled with checklists so your team launches with confidence.",
+      "We handle deployment, QA, and handoff with operational clarity, so your team can run the system confidently from day one.",
   },
   {
     number: "05",
     icon: <LineChart className="w-5 h-5" />,
     title: "Optimization",
     description:
-      "After launch, we monitor performance and improve conversion and workflows based on real usage.",
+      "After launch, we refine flows and systems based on real usage to support scalable growth without added complexity.",
   },
 ];
 
@@ -106,7 +106,7 @@ export function Process() {
             </span>
           </h2>
           <p className="text-base sm:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-            A clear, low-risk delivery model from first call to post-launch optimization.
+            A strategic partnership model designed for fast execution, operational clarity, and long-term infrastructure thinking.
           </p>
         </motion.div>
 
@@ -161,7 +161,7 @@ export function Process() {
             href="#contact"
             className="inline-flex rounded-lg border border-white/20 px-4 py-2.5 text-sm text-white/80 hover:text-white hover:border-white/35 transition-colors"
           >
-            Book Strategy Session
+            Discuss Your Build Strategy
           </a>
         </motion.div>
       </motion.div>

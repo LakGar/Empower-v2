@@ -230,7 +230,7 @@ function HeroGeometric({
             animate="visible"
             className="mt-4 text-sm text-white/45 md:text-center"
           >
-            Get a clear roadmap in the first call. No generic pitch decks.
+            Founder-led strategy call focused on execution priorities and shipping plan.
           </motion.p>
 
           <motion.div
@@ -246,7 +246,7 @@ function HeroGeometric({
                 Delivery
               </p>
               <p className="text-sm text-white/85">
-                4-8 week typical timelines
+                Fast cycles with practical timelines
               </p>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-left md:text-center">
@@ -255,7 +255,7 @@ function HeroGeometric({
                 Outcome
               </p>
               <p className="text-sm text-white/85">
-                Conversion and system performance
+                Revenue, conversion, and operational clarity
               </p>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-left md:text-center">
@@ -264,7 +264,7 @@ function HeroGeometric({
                 Focus
               </p>
               <p className="text-sm text-white/85">
-                AI, robotics, and service businesses
+                Modern B2B, service, and product teams
               </p>
             </div>
           </motion.div>

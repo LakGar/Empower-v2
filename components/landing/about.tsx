@@ -93,33 +93,33 @@ export function About() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/3 border border-white/8 mb-8">
               <span className="text-sm text-white/60 tracking-wide">
-                Founder and Team
+                Founder Authority
               </span>
             </div>
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
               <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
-                Built for
+                Founder-Led
               </span>
               <br />
               <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300">
-                Serious Growth
+                Product Execution
               </span>
             </h2>
             <p className="text-base sm:text-lg text-white/40 mb-6 leading-relaxed font-light tracking-wide max-w-2xl">
-              EmpowerWeb was started by Lakshay Garg and now works as a focused build team for companies that need revenue-driving websites and operational systems they can scale.
+              EmpowerWeb is led by Lakshay Garg, a builder who works directly with founders and operators to move from idea to deployed product without unnecessary layers.
             </p>
             <p className="text-base sm:text-lg text-white/40 leading-relaxed font-light tracking-wide max-w-2xl">
-              We combine technical execution with business context so your digital infrastructure supports growth, sales, and day-to-day execution.
+              We ship real systems under real constraints: tight timelines, evolving requirements, and the need for operational clarity from day one.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">
-                Founder-led quality control
+                Founder-led execution
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">
-                Multi-disciplinary delivery team
+                Idea to deployed product
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">
-                Strategy + build in one workflow
+                Systems thinking under constraints
               </span>
             </div>
           </motion.div>
