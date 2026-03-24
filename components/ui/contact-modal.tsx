@@ -221,12 +221,12 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
         <Dialog.Content className="fixed left-[50%] top-[50%] z-50 grid w-full max-w-4xl translate-x-[-50%] translate-y-[-50%] gap-4 border border-white/10 bg-black/95 backdrop-blur-xl p-0 shadow-2xl duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-2xl overflow-hidden max-h-[90vh] flex flex-col">
-          <VisuallyHidden.Root>
-            <Dialog.Title>Start Your Project</Dialog.Title>
-            <Dialog.Description>
-              Fill out the form and select a time to schedule your call
-            </Dialog.Description>
-          </VisuallyHidden.Root>
+            <VisuallyHidden.Root>
+              <Dialog.Title>Free AI Workflow Audit</Dialog.Title>
+              <Dialog.Description>
+                Share a few details and book a short call. We'll identify where AI, automation, or custom software could save your business time.
+              </Dialog.Description>
+            </VisuallyHidden.Root>
           <div className="relative flex-1 flex flex-col min-h-0">
             <Dialog.Close
               onClick={handleClose}
@@ -248,10 +248,10 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                 >
                   <div className="max-w-2xl mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                      Tell us about your project
+                      Free AI Workflow Audit
                     </h2>
                     <p className="text-white/60 mb-8 text-sm md:text-base">
-                      Help us prepare for our call by sharing some details
+                      In a short call, we'll identify areas where AI, automation, or custom software could save your business time and improve operations. Share a few details to get started.
                     </p>
 
                     <form
@@ -363,7 +363,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                           size="lg"
                           className="gap-2 bg-white text-black hover:bg-white/90 w-full md:w-auto"
                         >
-                          Continue to Schedule
+                          Continue to Book Call
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </div>
@@ -379,7 +379,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="w-full h-[600px] md:h-[700px] relative flex-1 min-h-0"
+                  className="w-full flex-1 flex flex-col min-h-[600px] md:min-h-[70vh] relative"
                   style={{ position: "relative" }}
                 >
                   {calendlyLoaded ? (
@@ -397,16 +397,17 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                       <div
                         key={calendlyUrlWithData}
                         ref={calendlyWidgetRef}
-                        className="calendly-inline-widget h-full w-full"
+                        className="calendly-inline-widget w-full flex-1"
                         style={{
                           minWidth: "320px",
-                          height: "100%",
+                          minHeight: "560px",
+                          height: "70vh",
                           position: "relative",
                         }}
                       />
                     </>
                   ) : (
-                    <div className="flex items-center justify-center h-full">
+                    <div className="flex items-center justify-center flex-1 min-h-[400px]">
                       <div className="flex flex-col items-center gap-4">
                         <Loader2 className="h-8 w-8 text-white/60 animate-spin" />
                         <div className="text-white/60">Loading calendar...</div>

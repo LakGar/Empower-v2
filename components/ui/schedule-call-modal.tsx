@@ -33,9 +33,9 @@ export function ScheduleCallModal({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
         <Dialog.Content className="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-white/10 bg-black/95 backdrop-blur-xl p-6 md:p-8 shadow-2xl duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-2xl">
         <VisuallyHidden.Root>
-          <Dialog.Title>Schedule a Call</Dialog.Title>
+          <Dialog.Title>Book a Free Strategy Call</Dialog.Title>
           <Dialog.Description>
-            Book a time to discuss your project with us
+            Book a time to discuss your workflow, website, or product and where AI or software could help.
           </Dialog.Description>
         </VisuallyHidden.Root>
         <div className="relative">
@@ -60,10 +60,10 @@ export function ScheduleCallModal({
               
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Schedule a Call
+                  Book a Free Strategy Call
                 </h2>
                 <p className="text-white/60 text-sm md:text-base">
-                  Book a time that works for you to discuss your project
+                  Pick a time that works. We'll talk through your workflow, website, or product and where AI or software could create real leverage.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export function ScheduleCallModal({
               </a>
 
               <p className="text-white/40 text-xs">
-                You&apos;ll be redirected to our Calendly page to select a time
+                You'll be redirected to select a time. No commitment required.
               </p>
             </div>
           </motion.div>

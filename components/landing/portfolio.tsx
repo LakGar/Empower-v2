@@ -52,9 +52,7 @@ export function Portfolio() {
             </span>
           </h1>
           <p className="text-base sm:text-lg text-white/40 max-w-2xl leading-relaxed font-light tracking-wide">
-            Explore our portfolio of cutting-edge web applications and digital
-            solutions. Each project includes design direction, color palettes, typography,
-            and technical implementation details.
+            A selection of projects we've built: AI products, internal tools, and business websites. Each includes context on what was built and for whom.
           </p>
         </div>
       </motion.div>
@@ -81,16 +79,16 @@ export function Portfolio() {
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-5xl font-bold text-white mb-6">
-            Ready to Start Your Project?
+            Ready to Build Smarter Systems?
           </h2>
           <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto">
-            Let's work together to bring your digital vision to life.
+            Let's talk about your workflow, website, or product and where AI or software could help.
           </p>
           <Link
             href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-white/90 transition-colors"
           >
-            Get In Touch
+            Book a Free Strategy Call
             <ExternalLink className="h-4 w-4" />
           </Link>
         </div>

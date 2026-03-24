@@ -10,18 +10,17 @@ function HoverFooter() {
     {
       title: "Services",
       links: [
-        { label: "Web Development", href: "#services" },
-        { label: "Frontend Development", href: "#services" },
-        { label: "Backend Development", href: "#services" },
-        { label: "Full Stack Solutions", href: "#services" },
+        { label: "AI Workflow Automation", href: "#services" },
+        { label: "Custom Internal Tools", href: "#services" },
+        { label: "Startup MVP Development", href: "#services" },
+        { label: "Business Websites", href: "#services" },
       ],
     },
     {
       title: "Company",
       links: [
-        { label: "About Us", href: "#about" },
-        { label: "Our Team", href: "#about" },
-        { label: "Portfolio", href: "/work" },
+        { label: "About", href: "#about" },
+        { label: "Featured Work", href: "#projects" },
         {
           label: "Contact",
           href: "#contact",
@@ -61,8 +60,7 @@ function HoverFooter() {
               </span>
             </div>
             <p className="text-xs md:text-sm text-white/70 leading-relaxed">
-              A modern web development company specializing in creating
-              powerful, scalable, and innovative digital solutions.
+              AI automation and software partner for businesses. We help you save time, reduce manual work, and launch products that work.
             </p>
           </div>
 

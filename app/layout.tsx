@@ -14,22 +14,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.theempowerweb.com"),
-  title: "Empower - Elevate Your Digital Vision",
+  title: "EmpowerWeb | AI Automation and Custom Software for Growing Businesses",
   description:
-    "A modern web development company specializing in creating powerful, scalable, and innovative digital solutions. We combine technical expertise with creative vision to deliver exceptional results.",
+    "Founder-led AI automation and custom software consulting. We help businesses automate workflows, reduce manual work, and build modern software with AI.",
   keywords: [
-    "web development",
-    "web design",
+    "AI automation",
+    "custom software",
+    "workflow automation",
+    "internal tools",
+    "MVP development",
+    "business websites",
+    "AI consulting",
     "Next.js",
     "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "custom websites",
-    "web applications",
-    "digital solutions",
   ],
-  authors: [{ name: "Empower" }],
-  creator: "Empower",
+  authors: [{ name: "EmpowerWeb" }],
+  creator: "EmpowerWeb",
   icons: {
     icon: [{ url: "/logo.png", type: "image/png" }],
     shortcut: "/logo.png",
@@ -39,24 +39,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.theempowerweb.com/",
-    title: "Empower - Elevate Your Digital Vision",
+    title: "EmpowerWeb | AI Automation and Custom Software for Growing Businesses",
     description:
-      "A modern web development company specializing in creating powerful, scalable, and innovative digital solutions.",
-    siteName: "Empower",
+      "Founder-led AI automation and custom software. We help businesses automate workflows, reduce manual work, and launch products that work.",
+    siteName: "EmpowerWeb",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Empower Logo",
+        alt: "EmpowerWeb Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Empower - Elevate Your Digital Vision",
+    title: "EmpowerWeb | AI Automation and Custom Software for Growing Businesses",
     description:
-      "A modern web development company specializing in creating powerful, scalable, and innovative digital solutions.",
+      "Founder-led AI automation and custom software. We help businesses automate workflows, reduce manual work, and launch products that work.",
     images: ["/logo.png"],
   },
   robots: {

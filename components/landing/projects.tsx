@@ -14,78 +14,81 @@ export const products = [
     title: "Ava",
     link: "https://gomoonbeam.com",
     thumbnail: "/ava.png",
+    caption: "Web product and marketing site.",
   },
-
   {
     title: "Universal AI Services",
     link: "https://universalaiservices.com/",
     thumbnail: "/uais.png",
-  },
-  {
-    title: "Empower",
-    link: "https://empower-five.vercel.app/",
-    thumbnail: "/empower.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-
-  {
-    title: "legalAI",
-    link: "https://legalai.dev/",
-    thumbnail: "/legal.png",
+    caption: "AI services company website and positioning.",
   },
   {
     title: "Robot Combat Federation",
     link: "https://robot-combat-federation.vercel.app/",
     thumbnail: "/rcf.png",
+    caption: "Event and league platform for robot combat.",
+  },
+  {
+    title: "legalAI",
+    link: "https://legalai.dev/",
+    thumbnail: "/legalai.png",
+    caption: "Legal AI product for document and research workflows.",
+  },
+
+  {
+    title: "Empower",
+    link: "https://empower-five.vercel.app/",
+    thumbnail: "/empower.png",
+    caption: "Consulting and services landing page.",
+  },
+  {
+    title: "Lilia",
+    link: "https://liliadurham.com/",
+    thumbnail: "/lilia.png",
+    caption: "Landing and product experience.",
+  },
+  {
+    title: "Coco",
+    link: "https://joincoco.app/",
+    thumbnail: "/coco.png",
+    caption: "Web application and brand site.",
+  },
+  {
+    title: "Lunina",
+    link: "https://lumina-fawn.vercel.app/",
+    thumbnail: "/lumina2.png",
+    caption: "Landing and product experience.",
   },
   {
     title: "Phono",
     link: "https://phono-web.vercel.app/",
     thumbnail: "/phono.png",
+    caption: "Web application and brand site.",
   },
   {
-    title: "Lunina",
-    link: "https://lumina-fawn.vercel.app/",
-    thumbnail: "/lumina.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+    title: "Pupa Ventures ",
+    link: "https://pupa-ventures.vercel.app",
+    thumbnail: "/legal.png",
+    caption: "Product or brand site.",
   },
 
   {
     title: "TopShotGolfing",
     link: "https://topshotgolfing.com",
     thumbnail: "/topshot.png",
+    caption: "Golf business website.",
   },
   {
     title: "SF Playground",
     link: "https://sfplayground.vercel.app/",
-    thumbnail: "/sfp.png",
+    thumbnail: "/sfplayground.png",
+    caption: "Local discovery or community platform.",
   },
+
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Pupa Ventures_ ",
+    link: "https://pupa-ventures.vercel.app",
+    thumbnail: "/pupa.png",
+    caption: "Product or brand site.",
   },
 ];

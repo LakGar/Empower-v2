@@ -2,32 +2,32 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { Target, Award, Heart, Users } from "lucide-react";
+import { Target, Award, Gauge, Building2 } from "lucide-react";
 
 const values = [
   {
-    icon: <Target className="w-5 h-5" />,
-    title: "Mission-Driven",
+    icon: <Building2 className="w-5 h-5" />,
+    title: "Real Projects Shipped",
     description:
-      "We're committed to delivering solutions that exceed expectations and drive real business results.",
+      "Web platforms, internal systems, and automation tools delivered for AI, robotics, and service-focused companies.",
+  },
+  {
+    icon: <Target className="w-5 h-5" />,
+    title: "Industries We Work In",
+    description:
+      "AI software, robotics programs, operationally heavy service businesses, and founder-led B2B teams.",
+  },
+  {
+    icon: <Gauge className="w-5 h-5" />,
+    title: "Execution Speed",
+    description:
+      "Tight timelines, clear priorities, and weekly delivery rhythm so momentum never stalls.",
   },
   {
     icon: <Award className="w-5 h-5" />,
-    title: "Excellence",
+    title: "Systems Thinking",
     description:
-      "Quality is at the heart of everything we do. We strive for perfection in every project.",
-  },
-  {
-    icon: <Heart className="w-5 h-5" />,
-    title: "Passion",
-    description:
-      "We love what we do, and it shows in our dedication to creating exceptional digital experiences.",
-  },
-  {
-    icon: <Users className="w-5 h-5" />,
-    title: "Collaboration",
-    description:
-      "We work closely with our clients as partners, ensuring your vision becomes reality.",
+      "Every build is designed around conversion, scalability, and operational efficiency, not one-off pages.",
   },
 ];
 
@@ -93,29 +93,35 @@ export function About() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/3 border border-white/8 mb-8">
               <span className="text-sm text-white/60 tracking-wide">
-                About Us
+                Founder and Team
               </span>
             </div>
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
               <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
-                Building Digital
+                Built for
               </span>
               <br />
               <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300">
-                Experiences
+                Serious Growth
               </span>
             </h2>
             <p className="text-base sm:text-lg text-white/40 mb-6 leading-relaxed font-light tracking-wide max-w-2xl">
-              We are a modern web development company specializing in creating
-              powerful, scalable, and innovative digital solutions. We combine
-              technical expertise with creative vision to deliver exceptional
-              results.
+              EmpowerWeb was started by Lakshay Garg and now works as a focused build team for companies that need revenue-driving websites and operational systems they can scale.
             </p>
             <p className="text-base sm:text-lg text-white/40 leading-relaxed font-light tracking-wide max-w-2xl">
-              Our team of passionate developers and designers work together to
-              transform ideas into stunning, high-performance websites and
-              applications that users love.
+              We combine technical execution with business context so your digital infrastructure supports growth, sales, and day-to-day execution.
             </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">
+                Founder-led quality control
+              </span>
+              <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">
+                Multi-disciplinary delivery team
+              </span>
+              <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">
+                Strategy + build in one workflow
+              </span>
+            </div>
           </motion.div>
 
           <motion.div

@@ -1,9 +1,9 @@
 "use client";
 
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { Circle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Circle, ShieldCheck, Clock3, TrendingUp } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 function ElegantShape({
   className,
@@ -60,10 +60,10 @@ function ElegantShape({
             "absolute inset-0 rounded-full",
             "bg-linear-to-r to-transparent",
             gradient,
-            "backdrop-blur-[2px] border-2 border-white/[0.15]",
+            "backdrop-blur-[2px] border-2 border-white/15",
             "shadow-[0_8px_32px_0_rgba(255,255,255,0.1)]",
             "after:absolute after:inset-0 after:rounded-full",
-            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]"
+            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]",
           )}
         />
       </motion.div>
@@ -72,13 +72,23 @@ function ElegantShape({
 }
 
 function HeroGeometric({
-  badge = "Design Collective",
-  title1 = "Elevate Your Digital Vision",
-  title2 = "Crafting Exceptional Websites",
+  badge = "Empower",
+  title1 = "AI Automation and Custom Software",
+  title2 = "for Growing Businesses",
+  subtitle = "We help businesses automate workflows, reduce manual work, and build modern software with AI.",
+  primaryCtaLabel = "Book a Free Strategy Call",
+  primaryCtaHref = "#contact",
+  secondaryCtaLabel = "View Our Work",
+  secondaryCtaHref = "#projects",
 }: {
   badge?: string;
   title1?: string;
   title2?: string;
+  subtitle?: string;
+  primaryCtaLabel?: string;
+  primaryCtaHref?: string;
+  secondaryCtaLabel?: string;
+  secondaryCtaHref?: string;
 }) {
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -163,14 +173,14 @@ function HeroGeometric({
             initial="hidden"
             animate="visible"
           >
-            <h1 className="text-5xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 md:mb-8 tracking-tight">
               <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
                 {title1}
               </span>
               <br />
               <span
                 className={cn(
-                  "bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300 "
+                  "bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300 ",
                 )}
               >
                 {title2}
@@ -185,9 +195,78 @@ function HeroGeometric({
             animate="visible"
           >
             <p className="text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl md:mx-auto px-0 md:px-4">
-              Crafting exceptional digital experiences through innovative design
-              and cutting-edge technology.
+              {subtitle}
             </p>
+          </motion.div>
+
+          <motion.div
+            custom={3}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-center items-stretch md:items-center"
+          >
+            <Button
+              asChild
+              size="lg"
+              className="bg-white text-black hover:bg-white/90 font-medium"
+            >
+              <a href={primaryCtaHref}>{primaryCtaLabel}</a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/20 text-black hover:bg-white/10 hover:text-white"
+            >
+              <a href={secondaryCtaHref}>{secondaryCtaLabel}</a>
+            </Button>
+          </motion.div>
+
+          <motion.p
+            custom={4}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="mt-4 text-sm text-white/45 md:text-center"
+          >
+            Get a clear roadmap in the first call. No generic pitch decks.
+          </motion.p>
+
+          <motion.div
+            custom={5}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl md:mx-auto"
+          >
+            <div className="rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-left md:text-center">
+              <p className="flex items-center gap-2 text-xs text-white/55 uppercase tracking-wide mb-1">
+                <Clock3 className="h-3.5 w-3.5" />
+                Delivery
+              </p>
+              <p className="text-sm text-white/85">
+                4-8 week typical timelines
+              </p>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-left md:text-center">
+              <p className="flex items-center gap-2 text-xs text-white/55 uppercase tracking-wide mb-1">
+                <TrendingUp className="h-3.5 w-3.5" />
+                Outcome
+              </p>
+              <p className="text-sm text-white/85">
+                Conversion and system performance
+              </p>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-left md:text-center">
+              <p className="flex items-center gap-2 text-xs text-white/55 uppercase tracking-wide mb-1">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                Focus
+              </p>
+              <p className="text-sm text-white/85">
+                AI, robotics, and service businesses
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>

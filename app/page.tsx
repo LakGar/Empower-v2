@@ -7,14 +7,16 @@ import { Services } from "@/components/landing/services";
 import { About } from "@/components/landing/about";
 import { Process } from "@/components/landing/process";
 import { Stats } from "@/components/landing/stats";
+import { CaseStudies } from "@/components/landing/case-studies";
 
 export default function Home() {
   return (
     <div className="bg-black">
       <Hero />
-      <Services />
       <About />
       <HeroParallaxDemo />
+      <CaseStudies />
+      <Services />
       <Process />
       <Stats />
       <Testimonials />

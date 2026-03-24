@@ -17,6 +17,7 @@ export const HeroParallax = ({
     title: string;
     link: string;
     thumbnail: string;
+    caption?: string;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -76,10 +77,13 @@ export const HeroParallax = ({
                 className="object-cover object-center h-full w-full"
                 alt={product.title}
               />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
-                <h3 className="text-white text-sm font-semibold p-3">
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
+                <h3 className="text-white text-sm font-semibold">
                   {product.title}
                 </h3>
+                {product.caption && (
+                  <p className="text-white/80 text-xs mt-1">{product.caption}</p>
+                )}
               </div>
             </Link>
           ))}
@@ -131,11 +135,10 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full z-10">
       <h1 className="text-2xl md:text-7xl font-bold text-white">
-        Our Latest <br /> Projects
+        Featured <br /> Work
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-white/70">
-        Explore our portfolio of cutting-edge web applications and digital
-        solutions built with modern technologies and innovative design.
+        A selection of projects we’ve built: AI products, internal tools, and business websites that solve real problems.
       </p>
     </div>
   );
@@ -149,6 +152,7 @@ export const ProductCard = ({
     title: string;
     link: string;
     thumbnail: string;
+    caption?: string;
   };
   translate: MotionValue<number>;
 }) => {
@@ -176,9 +180,12 @@ export const ProductCard = ({
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
+      <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover/product:opacity-100 text-white">
+        <h2 className="font-semibold">{product.title}</h2>
+        {product.caption && (
+          <p className="text-sm text-white/90 mt-1">{product.caption}</p>
+        )}
+      </div>
     </motion.div>
   );
 };

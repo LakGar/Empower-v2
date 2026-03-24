@@ -48,7 +48,7 @@ const BentoCard = ({
     whileHover={{ y: -5, scale: 1.02 }}
     transition={{ duration: 0.2 }}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
+      "group relative flex flex-col justify-between overflow-hidden rounded-xl min-h-[220px]",
       "border-t border-white/10 bg-linear-to-b from-white/5 to-white/2 backdrop-blur-[2px]",
       "hover:from-white/8 hover:to-white/4",
       "transform-gpu transition-all duration-300",

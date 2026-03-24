@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
-import { Search, PenTool, Code2, Rocket, CheckCircle2 } from "lucide-react";
+import { Search, PenTool, Code2, Rocket, LineChart } from "lucide-react";
 
 const steps = [
   {
@@ -10,35 +10,35 @@ const steps = [
     icon: <Search className="w-5 h-5" />,
     title: "Discovery",
     description:
-      "We start by understanding your business, goals, and target audience to create a strategic plan.",
+      "We map your current funnel, operations, and constraints so we focus on the highest leverage opportunities first.",
   },
   {
     number: "02",
     icon: <PenTool className="w-5 h-5" />,
-    title: "Design",
+    title: "Strategy",
     description:
-      "Our designers create beautiful, user-friendly interfaces that align with your brand and goals.",
+      "You get a clear execution plan, timeline, and scope aligned to revenue goals and operational efficiency.",
   },
   {
     number: "03",
     icon: <Code2 className="w-5 h-5" />,
-    title: "Development",
+    title: "Build",
     description:
-      "We build your solution using the latest technologies, ensuring performance and scalability.",
+      "We ship in weekly milestones with transparent updates, keeping quality high and surprises low.",
   },
   {
     number: "04",
-    icon: <CheckCircle2 className="w-5 h-5" />,
-    title: "Testing",
-    description:
-      "Rigorous testing ensures your product works flawlessly across all devices and browsers.",
-  },
-  {
-    number: "05",
     icon: <Rocket className="w-5 h-5" />,
     title: "Launch",
     description:
-      "We deploy your solution and provide ongoing support to ensure continued success.",
+      "Deployment, QA, and handoff are handled with checklists so your team launches with confidence.",
+  },
+  {
+    number: "05",
+    icon: <LineChart className="w-5 h-5" />,
+    title: "Optimization",
+    description:
+      "After launch, we monitor performance and improve conversion and workflows based on real usage.",
   },
 ];
 
@@ -93,20 +93,20 @@ export function Process() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/3 border border-white/8 mb-8">
             <span className="text-sm text-white/60 tracking-wide">
-              Our Process
+              Growth Infrastructure Process
             </span>
           </div>
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
-              How We
+              How We Help
             </span>
             <br />
             <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300">
-              Work
+              You Grow
             </span>
           </h2>
           <p className="text-base sm:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-            A proven methodology that ensures successful project delivery
+            A clear, low-risk delivery model from first call to post-launch optimization.
           </p>
         </motion.div>
 
@@ -149,6 +149,21 @@ export function Process() {
             ))}
           </div>
         </div>
+        <motion.div
+          custom={6}
+          variants={fadeUpVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <a
+            href="#contact"
+            className="inline-flex rounded-lg border border-white/20 px-4 py-2.5 text-sm text-white/80 hover:text-white hover:border-white/35 transition-colors"
+          >
+            Book Strategy Session
+          </a>
+        </motion.div>
       </motion.div>
     </section>
   );

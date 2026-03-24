@@ -2,70 +2,46 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef, useState } from "react";
-import { Code, Palette, Zap, Globe, Smartphone, Database } from "lucide-react";
-import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import { Bot, Wrench, Globe } from "lucide-react";
+import { BentoCard } from "@/components/ui/bento-grid";
 import { ScheduleCallModal } from "@/components/ui/schedule-call-modal";
 
 const services = [
   {
-    Icon: Code,
-    name: "Web Development",
-    description:
-      "Custom websites and web applications built with modern technologies like React, Next.js, and TypeScript.",
-    href: "#",
-    cta: "Learn more",
-    background: (
-      <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-indigo-500 to-purple-500 rounded-full blur-3xl" />
-    ),
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
-  },
-  {
-    Icon: Palette,
-    name: "UI/UX Design",
-    description:
-      "Beautiful, intuitive designs that engage users and drive conversions with a focus on user experience.",
-    href: "#",
-    cta: "Learn more",
-    background: (
-      <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-rose-500 to-pink-500 rounded-full blur-3xl" />
-    ),
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
-  },
-  {
-    Icon: Zap,
-    name: "Performance Optimization",
-    description:
-      "Lightning-fast websites optimized for speed, SEO, and user experience. Every detail matters.",
-    href: "#",
-    cta: "Learn more",
-    background: (
-      <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-amber-500 to-yellow-500 rounded-full blur-3xl" />
-    ),
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
-  },
-  {
     Icon: Globe,
-    name: "Full Stack Solutions",
+    name: "Custom Websites That Convert",
     description:
-      "End-to-end development from frontend to backend, ensuring seamless integration and scalability.",
-    href: "#",
-    cta: "Learn more",
+      "Messaging, UX, and conversion architecture built to turn qualified traffic into booked calls and signed clients.",
+    href: "#contact",
+    cta: "Start Building Your Growth Infrastructure",
     background: (
       <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-cyan-500 to-blue-500 rounded-full blur-3xl" />
     ),
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    className: "",
   },
   {
-    Icon: Smartphone,
-    name: "Mobile Development",
+    Icon: Wrench,
+    name: "Internal Tools and CRM Systems",
     description:
-      "Responsive designs and mobile-first approaches that work flawlessly across all devices and screen sizes.",
-    href: "#",
-    cta: "Learn more",
+      "Operational systems that replace spreadsheet chaos with clear workflows, team visibility, and repeatable execution.",
+    href: "#contact",
+    cta: "Get a Technical Growth Audit",
     background: (
-      <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-violet-500 to-indigo-500 rounded-full blur-3xl" />
+      <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-rose-500 to-pink-500 rounded-full blur-3xl" />
     ),
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+    className: "",
+  },
+  {
+    Icon: Bot,
+    name: "AI-Enhanced Product and Workflow Development",
+    description:
+      "Practical AI applied to your product and operations to improve conversion, speed decisions, and increase operational efficiency.",
+    href: "#contact",
+    cta: "Book Strategy Session",
+    background: (
+      <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-indigo-500 to-purple-500 rounded-full blur-3xl" />
+    ),
+    className: "",
   },
 ];
 
@@ -122,7 +98,7 @@ export function Services() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/3 border border-white/8 mb-8">
             <span className="text-sm text-white/60 tracking-wide">
-              Our Services
+              Core Services
             </span>
           </div>
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
@@ -131,25 +107,22 @@ export function Services() {
             </span>
             <br />
             <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300">
-              Offer
+              Build
             </span>
           </h2>
           <p className="text-base sm:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-            Comprehensive web development services to bring your digital vision
-            to life
+            Three focused offerings designed to improve conversion, scalability, and operational efficiency.
           </p>
         </motion.div>
 
-        <div className="w-full max-w-7xl mx-auto">
-          <BentoGrid className="lg:grid-rows-3">
-            {services.map((service) => (
-              <BentoCard
-                key={service.name}
-                {...service}
-                onClick={() => setIsModalOpen(true)}
-              />
-            ))}
-          </BentoGrid>
+        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 auto-rows-[minmax(220px,auto)] gap-6">
+          {services.map((service) => (
+            <BentoCard
+              key={service.name}
+              {...service}
+              onClick={() => setIsModalOpen(true)}
+            />
+          ))}
         </div>
       </motion.div>
       <ScheduleCallModal open={isModalOpen} onOpenChange={setIsModalOpen} />
