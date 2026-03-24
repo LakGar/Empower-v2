@@ -18,11 +18,11 @@ export const products = [
       "Context: product launch for a fast-moving team. Problem: offer was hard to explain quickly. Solution: rebuilt the site around clear flows and proof. Outcome: stronger positioning and faster launch readiness.",
   },
   {
-    title: "Universal AI Services",
+    title: "Building a Robotics Marketplace Under Real Launch Pressure",
     link: "https://universalaiservices.com/",
     thumbnail: "/uais.png",
     caption:
-      "Context: AI services firm competing in a crowded space. Problem: traffic was not translating into qualified conversations. Solution: conversion-focused messaging and lead flow redesign. Outcome: clearer buyer intent before calls.",
+      "Context: A robotics consultancy preparing for a major industry event needed a digital infrastructure layer to support product visibility, consultations, and future sales workflows. Problem: Their existing web presence did not support product exploration, customer engagement, or structured service offerings, and the event deadline created real launch pressure. Solution: We designed and deployed a full digital marketplace architecture, including product catalog structures, consultation booking flows, and scalable backend systems built for operational use, not just presentation. Outcome: The consultancy gained a structured digital foundation to present offerings, engage potential customers, and continue evolving their sales pipeline after the event.",
   },
   {
     title: "Robot Combat Federation",

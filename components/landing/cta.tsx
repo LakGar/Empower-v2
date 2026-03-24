@@ -38,7 +38,7 @@ function CTA() {
               className="gap-2 w-full md:w-auto bg-white text-black hover:bg-white/90"
               onClick={() => setIsScheduleModalOpen(true)}
             >
-              Book a Strategy Call <PhoneCall className="w-4 h-4" />
+              Book a Founder Strategy Call <PhoneCall className="w-4 h-4" />
             </Button>
             <Button
               size="lg"

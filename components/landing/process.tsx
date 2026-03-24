@@ -161,7 +161,7 @@ export function Process() {
             href="#contact"
             className="inline-flex rounded-lg border border-white/20 px-4 py-2.5 text-sm text-white/80 hover:text-white hover:border-white/35 transition-colors"
           >
-            Discuss Your Build Strategy
+            Discuss Your Growth Infrastructure
           </a>
         </motion.div>
       </motion.div>

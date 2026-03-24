@@ -98,18 +98,17 @@ export function About() {
             </div>
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
               <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
-                Founder-Led
-              </span>
-              <br />
-              <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300">
-                Product Execution
+                Built by a Founder Who Ships
               </span>
             </h2>
             <p className="text-base sm:text-lg text-white/40 mb-6 leading-relaxed font-light tracking-wide max-w-2xl">
-              EmpowerWeb is led by Lakshay Garg, a builder who works directly with founders and operators to move from idea to deployed product without unnecessary layers.
+              EmpowerWeb is led by a full-stack product builder focused on turning complex ideas into real, deployed systems.
+            </p>
+            <p className="text-base sm:text-lg text-white/40 mb-6 leading-relaxed font-light tracking-wide max-w-2xl">
+              From AI platforms and operational dashboards to digital marketplaces and internal workflow tools, our work centers on execution under real constraints. We partner closely with founders, consultants, and growing teams who need more than design - they need infrastructure that supports real business momentum.
             </p>
             <p className="text-base sm:text-lg text-white/40 leading-relaxed font-light tracking-wide max-w-2xl">
-              We ship real systems under real constraints: tight timelines, evolving requirements, and the need for operational clarity from day one.
+              We believe serious digital work is not about aesthetics alone. It is about building systems that help teams operate with clarity, speed, and confidence.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-white/60">

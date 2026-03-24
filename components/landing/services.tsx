@@ -13,7 +13,7 @@ const services = [
     description:
       "Websites built to create trust quickly, improve conversion, and turn interest into real sales conversations.",
     href: "#contact",
-    cta: "Start Building Your Growth Infrastructure",
+    cta: "Plan Your Digital Build",
     background: (
       <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-cyan-500 to-blue-500 rounded-full blur-3xl" />
     ),
@@ -25,7 +25,7 @@ const services = [
     description:
       "Operational systems that replace manual handoffs with clear workflows, better visibility, and consistent execution.",
     href: "#contact",
-    cta: "Get a Technical Growth Audit",
+    cta: "Get Your System Roadmap",
     background: (
       <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-rose-500 to-pink-500 rounded-full blur-3xl" />
     ),
@@ -37,7 +37,7 @@ const services = [
     description:
       "Practical AI integrations that help teams ship faster, reduce operational friction, and scale without process breakdowns.",
     href: "#contact",
-    cta: "Book Strategy Session",
+    cta: "Discuss Your Growth Infrastructure",
     background: (
       <div className="absolute -right-20 -top-20 opacity-10 w-40 h-40 bg-linear-to-br from-indigo-500 to-purple-500 rounded-full blur-3xl" />
     ),
